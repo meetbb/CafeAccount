@@ -16,6 +16,7 @@
 		679775F829E9678E007B872C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 679775F629E9678E007B872C /* Main.storyboard */; };
 		679775FA29E9678F007B872C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 679775F929E9678F007B872C /* Assets.xcassets */; };
 		679775FD29E9678F007B872C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 679775FB29E9678F007B872C /* LaunchScreen.storyboard */; };
+		6797760329E969C9007B872C /* CafeAccounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6797760229E969C9007B872C /* CafeAccounts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		679775F929E9678F007B872C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		679775FC29E9678F007B872C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		679775FE29E9678F007B872C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6797760229E969C9007B872C /* CafeAccounts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeAccounts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				679775D329E966D1007B872C /* CafeAccounts.h */,
 				679775D429E966D1007B872C /* Info.plist */,
+				6797760229E969C9007B872C /* CafeAccounts.swift */,
 			);
 			path = CafeAccounts;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				TargetAttributes = {
 					679775CF29E966D0007B872C = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 					679775D829E966D1007B872C = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -262,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6797760329E969C9007B872C /* CafeAccounts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +443,7 @@
 		679775E529E966D1007B872C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2GR8F8KEA7;
@@ -454,6 +460,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mr.CafeAccounts;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -462,6 +469,7 @@
 		679775E629E966D1007B872C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2GR8F8KEA7;
@@ -486,6 +494,7 @@
 		679775E829E966D1007B872C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2GR8F8KEA7;
 				INFOPLIST_FILE = CafeAccountsTests/Info.plist;
@@ -504,6 +513,7 @@
 		679775E929E966D1007B872C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2GR8F8KEA7;
 				INFOPLIST_FILE = CafeAccountsTests/Info.plist;
